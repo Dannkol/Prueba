@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-orange: #ff702a;
+    --color-white: #fff;
+    --color-white-secundary: #ffefe8;
+    --color-primary: #1e1d2b;
+    --color-movil-primary: #2c2b47;
+    --color-dec: #087f5b;
+    --fs-lg: 68px;
+    --fs-sm: 24px;
+}
+
+
+
+body {
+    background-color: var(--color-primary);
+}
+
+.nav-link:hover {
+    border: 1px solid var(--color-dec);
+}
+
+section {
+    width: auto;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.icon-color{
+    color: var(--color-orange) !important;
+}
+
+.titel-text{
+    color: var(--color-orange);
+}
+
+.titel-section {
+    color: var(--color-orange);
+    font-size: var(--fs-lg);
+}
+
+.btn-main {
+    padding: 10px;
+    background-color: var(--color-orange);
+    border-radius: 0;
+    border: none;
+
+}
+#Menu{
+    height: 95vh;
+}
+
+#services{
+    height: 95vh;
+}
+
+.parrafos{
+    width: 60%;
+}
+
+.card{
+    background-color: var(--color-white-secundary) !important;
+    position: none !important;
+}
+
+.price{
+    color: var(--color-orange);
+}
+
+#quality{
+    width: auto;
+    height: 90vh;
+}
+
+#quality .contenedor{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-links{
+    width: auto;
+    height: 250px;
+}
+
+.card-quality{
+    background-color: var(--color-white-secundary);
+    width: 80%;
+    height: 450px;
+}
+
+.card-quality h1{
+    width: 25%;
+}
+
+hr{
+    margin: 0;
+    padding: 0;
+    height: 5px !important;
+    width: 28%;
+    color:var(--color-orange);
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#footer{
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 800px){
+    .navbar-nav{
+        background-color: var(--color-movil-primary);
+    }
+    .titel-section {
+        font-size: var(--fs-sm);
+    }
+    .row{
+        flex-direction: column;
+    }
+    .col{
+        flex: none;
+    }
+    .col div, p{
+        text-align: center  ;
+    }
+    .btn-main{
+        width: 90% !important;
+    }
+    .parrafos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-quality h1{
+        width: 50%;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    #Menu{
+        height: auto;
+    }
+
+    #services{
+        height: auto ;
+    }
+}
